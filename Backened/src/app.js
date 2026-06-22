@@ -14,7 +14,7 @@ const app = express();
 //    just install helmet thats it ayesha npm install it does everything automatically
 app.use(helmet())
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin:  ['http://localhost:5173', 'https://ai-resume-builder-nu-silk.vercel.app'],
   credentials: true
 }))
 app.use(express.json())
