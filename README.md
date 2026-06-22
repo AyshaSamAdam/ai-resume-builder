@@ -6,6 +6,7 @@ interviews by analyzing their resume,
 self description, and job description 
 using Google Gemini AI.
 
+https://ai-resume-builder-nu-silk.vercel.app/
 
 ## ✨ Features
 - 🔐 Secure authentication (JWT + Redis)
