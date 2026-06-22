@@ -52,7 +52,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        console.log("USE EFFECT IS SUNING ")
+       
 
 
         const checkLogin = async () => {

@@ -85,7 +85,7 @@ async function generateReportController(req, res) {
     } catch (error) {
         console.log(error)
         return res.status(500).json({
-            message: 'something went wrong while generating the report try agian later s'
+            message: 'something went wrong while generating the report try agian later '
         })
     }
 
