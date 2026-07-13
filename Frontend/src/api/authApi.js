@@ -1,5 +1,23 @@
 import axiosInstance from "../utils/axios"
 
+// USER FILLS REGISTER FORM 
+
+                // FIRSTNAME : JOHN 
+                // LASTNAME : DOE 
+                // EMAIL :   JOHN@GMAIL.COM
+                // PASSWORD :  TEST1233
+
+//  Component CALLS registerApi("john", "Doe", "john@gmail.com", "test123")
+
+                // AXIOS SENDS TO BACKENED
+//  axiosInstance already Base_url = http://localhost:5000/api with credentials true
+//  AxiosInstance.post('/auth/register', {firstName, lastName, email, password})
+
+// THE REQUEST INTERCEPTOR RUNS FIRST 
+// CHECKS IF ACCESSTOKEN EXISTS
+// ATTCAHES IT TO HEADERS IF YES 
+// RETURNS MODIFIED REQUEST 
+// REQUEST IS SENT TO BACKENED 
 
 export const registerUser = async (username, email, password) => {
     const response = await axiosInstance.post("/auth/register", { username, email, password })
