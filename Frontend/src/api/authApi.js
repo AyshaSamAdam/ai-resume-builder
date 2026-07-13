@@ -2,10 +2,17 @@ import axiosInstance from "../utils/axios"
 
 
 export const registerUser = async (username, email, password) => {
-
     const response = await axiosInstance.post("/auth/register", { username, email, password })
     return response.data
 }
+
+//     Remember in your loginController:  in backened 
+// const { email, password } = req.body
+
+// req.body is exactly what you put 
+// in this second argument
+ // 1 argument     2 argument 
+"/auth/login", { email, password }
 
 
 export const loginUser = async (email, password) => {
