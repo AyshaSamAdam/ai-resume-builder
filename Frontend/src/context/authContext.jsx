@@ -1,3 +1,9 @@
+// this is a global  state for auth
+//     Any Component can access:
+//     Who is logged in (user)
+//     login function //
+//      logout function 
+//       loading state
 import { createContext, useContext, useEffect, useState } from "react";
 
 import { registerUser, loginUser, logoutUser, refreshAccessToken, getMe } from '../api/authApi'
